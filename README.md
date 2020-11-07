@@ -30,16 +30,21 @@ Mr. Romaro has started his own analytics company to analyze the 2019 – 2020 ba
 
 ## Conclusion/Recommendations
 Q.1. Who are the top 8 teams for East and West Conference?
+
 Ans. To find the top eight teams, we looked at the win loss ratio of all the teams and found the top 8 teams for both the Eastern and Western conference.
 
 Q.2. Does the home team win more matches or the visitor team?
+
 Ans. We found by looking at the 2019-2020 season data, that there is a noticeable advantage to playing on a team’s home court. Using the 971 games played for the season for reference, the home team won 55.1% of the time.
 
 Q.3. Where are the locations of the game?
+
 Ans. Using google places API, we used a location search for each arena based on the ones listed in the data sets acquired from the Sports Feeds API to then map them across the united states. We then used these points and the teams win percentages as the factor for our heat map layer.
 
 Q.4. How can we determine who has the best chance of winning?
+
 Ans. Answering this question took some crunching, but we were able to synthesize a team’s win factor by looking at a multitude of factors ultimately leading to a team’s success. We found our data using the Sports Feeds API to get the most up to date data. First, we looked at their win percentage, then we looked at how many players on a team’s roster scored over 900 pts total as our threshold. Then after running linear regressions on Field Goal Totals, Points Difference, Average Points Scored, and Final Player Efficiency Rating, we were able to devise a formula for getting a teams Win Factor. Using the slope of these individual regressions as a multiplier for the top teams, we came up with the formula to make our final recommendations.
 
 Q.5. Who had the best chance of winning?
+
 Ans. From our findings and analysis of the 2019-20 season data, the Bucks, Lakers, and the Clippers had the best chance of winning at the conclusion of the season should it not have been cancelled due to COVID-19. This was based on their Win Factor which can be seen against the other teams in the bar graph titled “East vs West! Who Will Win?”
